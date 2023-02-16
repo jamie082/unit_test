@@ -1,3 +1,8 @@
+import unittest
+
+
+# https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/
+# Out code to be tested
 class Person:
 
     # init method or constructor
@@ -10,3 +15,6 @@ class Person:
 
 p = Person('Jamie Morrissey')
 p.say_hi()
+
+# The test baed on unittest module  Insert a number then produce an error
+class TestGetPersonClass(unittest.TestCase):
