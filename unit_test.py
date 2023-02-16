@@ -1,6 +1,5 @@
 import unittest
 
-
 # https://machinelearningmastery.com/a-gentle-introduction-to-unit-testing-in-python/
 # Out code to be tested
 class Person:
@@ -18,3 +17,8 @@ p.say_hi()
 
 # The test baed on unittest module  Insert a number then produce an error
 class TestGetPersonClass(unittest.TestCase):
+    def runTest(self):
+        p = Person(100000000)
+        self.assertEqual(say_hi(), 6, "Incorrect Area")
+
+unittest.main()
