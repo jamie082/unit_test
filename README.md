@@ -8,3 +8,6 @@ computes OK
 ## If code produces an error
 
 FAIL
+
+## TestCase class in docs.python.org
+Well I was going over docs.python.org for unittest and the main problem to this program is to throw an error becuase there is a '5' inserted, so output "A digit, not a string"

@@ -18,7 +18,7 @@ p.say_hi()
 # The test baed on unittest module  Insert a number then produce an error
 class TestGetPersonClass(unittest.TestCase):
     def runTest(self):
-        p = Person(100000000)
-        self.assertEqual(say_hi(), 6, "Incorrect Area")
+        p = Person(1001)
+        self.assertEqual(p.say_hi(), 1001, "Isn't Equal")
 
 unittest.main()
