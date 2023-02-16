@@ -1,8 +1,12 @@
 class Person:
-    def __init__ (self, name, age):
+
+    # init method or constructor
+    def __init__ (self, name):
         self.name = name
-        self.age = age
 
-p1 = Person("John", 36)
+    # Sample Method
+    def say_hi(self):
+        print('Hello, my name is', self.name)
 
-print(p1)
+p = Person('Jamie Morrissey')
+p.say_hi()
